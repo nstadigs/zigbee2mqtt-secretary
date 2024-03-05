@@ -1,12 +1,12 @@
 {
-  "name": "zigbee2mqtt-automations",
-  "version": "1.0.8",
-  "description": "Automations extension for zigbee2mqtt",
-  "author": "Luligu",
+  "name": "zigbee2mqtt-secretary",
+  "version": "0.0.1",
+  "description": "Secretary extension for zigbee2mqtt",
+  "author": "nstadigs",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Luligu/zigbee2mqtt-automations"
+    "url": "https://github.com/nstadigs/zigbee2mqtt-secretary"
   },
   "keywords": [
     "bridge",
@@ -18,15 +18,13 @@
     "zigbee-herdsman",
     "zigbee-herdsman-converters",
     "frontend",
-    "automations",
     "extensions",
-    "automation",
     "extension"
   ],
   "bugs": {
-    "url": "https://github.com/Luligu/zigbee2mqtt-automations/issues"
+    "url": "https://github.com/nstadigs/zigbee2mqtt-secretary/issues"
   },
-  "homepage": "https://github.com/Luligu/zigbee2mqtt-automations#readme",
+  "homepage": "https://github.com/nstadigs/zigbee2mqtt-secretary#readme",
   "devDependencies": {
     "@types/node": "^18.17.1",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
@@ -38,5 +36,8 @@
   "scripts": {
     "start": "tsc --watch",
     "build": "tsc"
+  },
+  "dependencies": {
+    "fnv1a": "^1.1.1"
   }
 }

@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # Define the path to your JavaScript file and the temporary JSON file
-jsFilePath="./dist/automations.js"
-jsonFilePath="./dist/__temp__automations.json"
+jsFilePath="./dist/secretary.js"
+jsonFilePath="./dist/__temp__secretary.json"
 
 # Read the content of the JS file, escape double quotes and newlines
 jsContent=$(<"$jsFilePath")
 escapedJsContent=$(echo "$jsContent" | sed 's/\\/\\\\/g' | sed 's/"/\\"/g' | sed ':a;N;$!ba;s/\n/\\n/g')
 
 # Define the complete JSON payload with the JS content
-jsonPayload="{\"name\": \"automations.js\", \"code\": \"$escapedJsContent\", \"transaction\": \"Luligu\"}"
+jsonPayload="{\"name\": \"secretary.js\", \"code\": \"$escapedJsContent\", \"transaction\": \"Luligu\"}"
 
 # Write the complete JSON payload to the temporary file
 echo "$jsonPayload" > "$jsonFilePath"
